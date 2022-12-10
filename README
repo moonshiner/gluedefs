@@ -1,0 +1,4 @@
+
+
+iddiff oldglue.txt newglue.txt  > iddiff.html
+rfcdiff --stdout oldglue.txt newglue.txt > rfcdiff.html 
