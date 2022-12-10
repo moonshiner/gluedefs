@@ -1,0 +1,509 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Diff: oldglue.txt - newglue.txt</title>
+    <style>
+      body {font-family: monospace}
+      table {
+        border-spacing: 0;
+      }
+      td {
+        padding: 0;
+        white-space: pre;
+        vertical-align: top;
+        font-size: 0.86em;
+      }
+      th {
+        padding: 0;
+        text-align: center;
+      }
+      .left { background-color: #EEE; }
+      .right { background-color: #FFF; }
+      .lblock { background-color: #BFB; }
+      .rblock { background-color: #FF8; }
+      .delete { background-color: #ACF; }
+      .insert { background-color: #8FF; }
+      .change { background-color: gray; }
+      .header { background-color: orange; }
+      .w-delete {
+        color: #F00;
+        text-decoration: line-through;
+      }
+      .w-insert {
+        color: #008000;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tbody>
+        <tr>
+          <td>&nbsp;</td>
+          <th class="header" scope="col">oldglue.txt</th>
+          <td>&nbsp;</td>
+          <th class="header" scope="col">newglue.txt</th>
+        </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="left">&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="right">&nbsp;</td>
+      </tr>
+      <tr id="context-0">
+        <td></td>
+        <th class="change" scope="col">
+          <a href="#context-0">
+           <small>Skipping</small>
+          </a>
+        </th>
+        <td></td>
+        <th class="change" scope="col">
+          <a href="#context-0">
+           <small>Skipping</small>
+          </a>
+        </th>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="left">      file that is not properly part of that zone, including nameserver
+</td>
+        <td>&nbsp;</td>
+        <td class="right">      file that is not properly part of that zone, including nameserver
+</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="left">      records of delegated sub-zones (NS records), address records that
+</td>
+        <td>&nbsp;</td>
+        <td class="right">      records of delegated sub-zones (NS records), address records that
+</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="left">      accompany those NS records (A, AAAA, etc), and any other stray
+</td>
+        <td>&nbsp;</td>
+        <td class="right">      accompany those NS records (A, AAAA, etc), and any other stray
+</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="left">      data that might appear.&quot;  (Quoted from [RFC2181], Section 5.4.1)
+</td>
+        <td>&nbsp;</td>
+        <td class="right">      data that might appear.&quot;  (Quoted from [RFC2181], Section 5.4.1)
+</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="left">
+</td>
+        <td>&nbsp;</td>
+        <td class="right">
+</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="left">      Although glue is sometimes used today with this wider definition
+</td>
+        <td>&nbsp;</td>
+        <td class="right">      Although glue is sometimes used today with this wider definition
+</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="left">      in mind, the context surrounding the definition in [RFC2181]
+</td>
+        <td>&nbsp;</td>
+        <td class="right">      in mind, the context surrounding the definition in [RFC2181]
+</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="left">      suggests it is intended to apply to the use of glue within the
+</td>
+        <td>&nbsp;</td>
+        <td class="right">      suggests it is intended to apply to the use of glue within the
+</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="lblock">      document itself and not necessarily beyond.
+</td>
+        <td>&nbsp;</td>
+        <td class="rblock">      document itself and not necessarily beyond.<span class="insert"> Glue records are</span>
+</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="lblock"></td>
+        <td>&nbsp;</td>
+        <td class="rblock"><span class="insert">      divided into two types for name servers: &quot;in-domain&quot; names and
+</span></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="lblock"><span class="delete">   Bailiwick:  &quot;In-bailiwick&quot; is a modifier to describe a name server
+</span></td>
+        <td>&nbsp;</td>
+        <td class="rblock"><span class="insert">      &quot;sibling domain&quot; names.
+</span></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="lblock"><span class="delete">      whose name is either a subdomain of or (rarely) the same as the
+</span></td>
+        <td>&nbsp;</td>
+        <td class="rblock"></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="lblock"><span class="delete">      origin of the zone that contains the delegation to the name
+</span></td>
+        <td>&nbsp;</td>
+        <td class="rblock"></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="lblock"><span class="delete">      server.  In-bailiwick name servers may have glue records in their
+</span></td>
+        <td>&nbsp;</td>
+        <td class="rblock"></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="lblock"><span class="delete">      parent zone (using the first of the definitions of &quot;glue records&quot;
+</span></td>
+        <td>&nbsp;</td>
+        <td class="rblock"></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="lblock"><span class="delete">      in the definition above).  (The word &quot;bailiwick&quot; means the
+</span></td>
+        <td>&nbsp;</td>
+        <td class="rblock"></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="lblock"><span class="delete">      district or territory where a bailiff or policeman has
+</span></td>
+        <td>&nbsp;</td>
+        <td class="rblock"></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="lblock"><span class="delete">      jurisdiction.)
+</span></td>
+        <td>&nbsp;</td>
+        <td class="rblock"></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="lblock"><span class="delete">      &quot;In-bailiwick&quot; names are divided into two types of names for name
+</span></td>
+        <td>&nbsp;</td>
+        <td class="rblock"></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="lblock"><span class="delete">      servers: &quot;in-domain&quot; names and &quot;sibling domain&quot; names.
+</span></td>
+        <td>&nbsp;</td>
+        <td class="rblock"></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="left">
+</td>
+        <td>&nbsp;</td>
+        <td class="right">
+</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="left">      *  In-domain: a modifier to describe a name server whose name is
+</td>
+        <td>&nbsp;</td>
+        <td class="right">      *  In-domain: a modifier to describe a name server whose name is
+</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="left">         either subordinate to or (rarely) the same as the owner name of
+</td>
+        <td>&nbsp;</td>
+        <td class="right">         either subordinate to or (rarely) the same as the owner name of
+</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="left">         the NS resource records.  An in-domain name server name needs
+</td>
+        <td>&nbsp;</td>
+        <td class="right">         the NS resource records.  An in-domain name server name needs
+</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="left">         to have glue records or name resolution fails.  For example, a
+</td>
+        <td>&nbsp;</td>
+        <td class="right">         to have glue records or name resolution fails.  For example, a
+</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="left">         delegation for &quot;child.example.com&quot; may have &quot;in-domain&quot; name
+</td>
+        <td>&nbsp;</td>
+        <td class="right">         delegation for &quot;child.example.com&quot; may have &quot;in-domain&quot; name
+</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="left">         server name &quot;ns.child.example.com&quot;.
+</td>
+        <td>&nbsp;</td>
+        <td class="right">         server name &quot;ns.child.example.com&quot;.
+</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="left">
+</td>
+        <td>&nbsp;</td>
+        <td class="right">
+</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="left">      *  Sibling domain: a name server&#x27;s name that is either subordinate
+</td>
+        <td>&nbsp;</td>
+        <td class="right">      *  Sibling domain: a name server&#x27;s name that is either subordinate
+</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="left">         to or (rarely) the same as the zone origin and not subordinate
+</td>
+        <td>&nbsp;</td>
+        <td class="right">         to or (rarely) the same as the zone origin and not subordinate
+</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="left">         to or the same as the owner name of the NS resource records.
+</td>
+        <td>&nbsp;</td>
+        <td class="right">         to or the same as the owner name of the NS resource records.
+</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="left">         Glue records for sibling domains are allowed, but not
+</td>
+        <td>&nbsp;</td>
+        <td class="right">         Glue records for sibling domains are allowed, but not
+</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="left">         necessary.  For example, a delegation for &quot;child.example.com&quot;
+</td>
+        <td>&nbsp;</td>
+        <td class="right">         necessary.  For example, a delegation for &quot;child.example.com&quot;
+</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="left">         in &quot;example.com&quot; zone may have &quot;sibling&quot; name server name
+</td>
+        <td>&nbsp;</td>
+        <td class="right">         in &quot;example.com&quot; zone may have &quot;sibling&quot; name server name
+</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="left">         &quot;ns.another.example.com&quot;.
+</td>
+        <td>&nbsp;</td>
+        <td class="right">         &quot;ns.another.example.com&quot;.
+</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="left">
+</td>
+        <td>&nbsp;</td>
+        <td class="right">
+</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="lblock"><span class="delete">      &quot;Out-of-bailiwick&quot; is the antonym of &quot;in-bailiwick&quot;.  It is a
+</span></td>
+        <td>&nbsp;</td>
+        <td class="rblock"><span class="insert">   The following table shows examples of delegation types.
+</span></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="lblock"><span class="delete">      modifier to describe a name server whose name is not subordinate
+</span></td>
+        <td>&nbsp;</td>
+        <td class="rblock"></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="lblock"><span class="delete">      to or the same as the zone origin.  Glue records for out-of-
+</span></td>
+        <td>&nbsp;</td>
+        <td class="rblock"></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="lblock"><span class="delete">      bailiwick name servers are useless.  The following table shows
+</span></td>
+        <td>&nbsp;</td>
+        <td class="rblock"></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="lblock"><span class="delete">      examples of delegation types.
+</span></td>
+        <td>&nbsp;</td>
+        <td class="rblock"></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="left">
+</td>
+        <td>&nbsp;</td>
+        <td class="right">
+</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="left">   Delegation |Parent|Name Server Name  | Type
+</td>
+        <td>&nbsp;</td>
+        <td class="right">   Delegation |Parent|Name Server Name  | Type
+</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="left">   -----------+------+------------------+-----------------------------
+</td>
+        <td>&nbsp;</td>
+        <td class="right">   -----------+------+------------------+-----------------------------
+</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="lblock">   com        | .    |a.gtld-servers.net|<span class="delete">in-bailiwick /</span> sibling domain
+</td>
+        <td>&nbsp;</td>
+        <td class="rblock">   com        | .    |a.gtld-servers.net| sibling domain
+</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="lblock">   net        | .    |a.gtld-servers.net|<span class="delete">in-bailiwick /</span> in-domain
+</td>
+        <td>&nbsp;</td>
+        <td class="rblock">   net        | .    |a.gtld-servers.net| in-domain
+</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="lblock">   example.org| org  |ns.example.org    |<span class="delete">in-bailiwick /</span> in-domain
+</td>
+        <td>&nbsp;</td>
+        <td class="rblock">   example.org| org  |ns.example.org    | in-domain
+</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="lblock">   example.org| org  |ns.ietf.org       |<span class="delete">in-bailiwick /</span> sibling domain
+</td>
+        <td>&nbsp;</td>
+        <td class="rblock">   example.org| org  |ns.ietf.org       | sibling domain
+</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="lblock">   example.org| org  |ns.example.com    |<span class="delete">out-of-bai</span>l<span class="delete">iwick</span>
+</td>
+        <td>&nbsp;</td>
+        <td class="rblock">   example.org| org  |ns.example.com    |<span class="insert"> Use</span>l<span class="insert">ess</span>
+</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="lblock">   example.jp | jp   |ns.example.jp     |<span class="delete">in-bailiwick /</span> in-domain
+</td>
+        <td>&nbsp;</td>
+        <td class="rblock">   example.jp | jp   |ns.example.jp     | in-domain
+</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="lblock">   example.jp | jp   |ns.example.ne.jp  |<span class="delete">in-bailiwick /</span> sibling domain
+</td>
+        <td>&nbsp;</td>
+        <td class="rblock">   example.jp | jp   |ns.example.ne.jp  | sibling domain
+</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="lblock">   example.jp | jp   |ns.example.com    |<span class="delete">out-of-bai</span>l<span class="delete">iwick</span>
+</td>
+        <td>&nbsp;</td>
+        <td class="rblock">   example.jp | jp   |ns.example.com    |<span class="insert"> Use</span>l<span class="insert">ess</span>
+</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="left">
+</td>
+        <td>&nbsp;</td>
+        <td class="right">
+</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="lblock"></td>
+        <td>&nbsp;</td>
+        <td class="rblock"><span class="insert">   Bailiwick:  &quot;In-bailiwick&quot; and &quot;Out-of-bailiwick&quot; are modifiers used
+</span></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="lblock"></td>
+        <td>&nbsp;</td>
+        <td class="rblock"><span class="insert">      to describe name servers.  The dictionary definition of bailiwick
+</span></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="lblock"></td>
+        <td>&nbsp;</td>
+        <td class="rblock"><span class="insert">      does not translate for this use,  These terms should be considered
+</span></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="lblock"></td>
+        <td>&nbsp;</td>
+        <td class="rblock"><span class="insert">      more historic in nature.
+</span></td>
+      </tr>
+      </tbody>
+    </table></body>
+</html>
