@@ -1,0 +1,64 @@
+   Glue records:  "...[Resource records] which are not part of the
+      authoritative data [of the zone], and are address RRs for the
+      [name] servers [in subzones].  These RRs are only necessary if the
+      name server's name is 'below' the cut, and are only used as part
+      of a referral response."  Without glue "we could be faced with the
+      situation where the NS RRs tell us that in order to learn a name
+      server's address, we should contact the server using the address
+      we wish to learn."  (Quoted from [RFC1034], Section 4.2.1)
+
+      A later definition is that glue "includes any record in a zone
+      file that is not properly part of that zone, including nameserver
+      records of delegated sub-zones (NS records), address records that
+      accompany those NS records (A, AAAA, etc), and any other stray
+      data that might appear."  (Quoted from [RFC2181], Section 5.4.1)
+
+      Although glue is sometimes used today with this wider definition
+      in mind, the context surrounding the definition in [RFC2181]
+      suggests it is intended to apply to the use of glue within the
+      document itself and not necessarily beyond.
+
+   Bailiwick:  "In-bailiwick" is a modifier to describe a name server
+      whose name is either a subdomain of or (rarely) the same as the
+      origin of the zone that contains the delegation to the name
+      server.  In-bailiwick name servers may have glue records in their
+      parent zone (using the first of the definitions of "glue records"
+      in the definition above).  (The word "bailiwick" means the
+      district or territory where a bailiff or policeman has
+      jurisdiction.)
+
+      "In-bailiwick" names are divided into two types of names for name
+      servers: "in-domain" names and "sibling domain" names.
+
+      *  In-domain: a modifier to describe a name server whose name is
+         either subordinate to or (rarely) the same as the owner name of
+         the NS resource records.  An in-domain name server name needs
+         to have glue records or name resolution fails.  For example, a
+         delegation for "child.example.com" may have "in-domain" name
+         server name "ns.child.example.com".
+
+      *  Sibling domain: a name server's name that is either subordinate
+         to or (rarely) the same as the zone origin and not subordinate
+         to or the same as the owner name of the NS resource records.
+         Glue records for sibling domains are allowed, but not
+         necessary.  For example, a delegation for "child.example.com"
+         in "example.com" zone may have "sibling" name server name
+         "ns.another.example.com".
+
+      "Out-of-bailiwick" is the antonym of "in-bailiwick".  It is a
+      modifier to describe a name server whose name is not subordinate
+      to or the same as the zone origin.  Glue records for out-of-
+      bailiwick name servers are useless.  The following table shows
+      examples of delegation types.
+
+   Delegation |Parent|Name Server Name  | Type
+   -----------+------+------------------+-----------------------------
+   com        | .    |a.gtld-servers.net|in-bailiwick / sibling domain
+   net        | .    |a.gtld-servers.net|in-bailiwick / in-domain
+   example.org| org  |ns.example.org    |in-bailiwick / in-domain
+   example.org| org  |ns.ietf.org       |in-bailiwick / sibling domain
+   example.org| org  |ns.example.com    |out-of-bailiwick
+   example.jp | jp   |ns.example.jp     |in-bailiwick / in-domain
+   example.jp | jp   |ns.example.ne.jp  |in-bailiwick / sibling domain
+   example.jp | jp   |ns.example.com    |out-of-bailiwick
+
