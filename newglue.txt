@@ -43,10 +43,13 @@
    net        | .    |a.gtld-servers.net| in-domain
    example.org| org  |ns.example.org    | in-domain
    example.org| org  |ns.ietf.org       | sibling domain
-   example.org| org  |ns.example.com    | Useless
+   example.org| org  |ns.example.com    | neither sibling or in-domain
    example.jp | jp   |ns.example.jp     | in-domain
    example.jp | jp   |ns.example.ne.jp  | sibling domain
-   example.jp | jp   |ns.example.com    | Useless
+   example.jp | jp   |ns.example.com    | neither sibling or in-domain
+
+   name servers which are neither "sibling" or "in-domain" should
+   not include additional records.
 
    Bailiwick:  "In-bailiwick" and "Out-of-bailiwick" are modifiers used
       to describe name servers.  The dictionary definition of bailiwick
