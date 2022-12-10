@@ -2,3 +2,7 @@
 
 iddiff oldglue.txt newglue.txt  > iddiff.html
 rfcdiff --stdout oldglue.txt newglue.txt > rfcdiff.html 
+
+iddiff found here https://github.com/ietf-tools/iddiff
+
+rfcdiff found here https://github.com/ietf-tools/rfcdiff
