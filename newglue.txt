@@ -52,7 +52,7 @@
    not include additional records.
 
    Bailiwick:  "In-bailiwick" and "Out-of-bailiwick" are modifiers used
-      to describe name servers.  The dictionary definition of bailiwick
-      does not translate for this use,  These terms should be considered
-      more historic in nature.
-        
+      to describe the relationship between a zone and the name servers
+      for that zone.  The dictionary definition of bailiwick has been
+      observed to cause more confusion than meaning for this use.
+      These terms should be considered historic in nature.
