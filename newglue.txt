@@ -16,9 +16,11 @@
       Although glue is sometimes used today with this wider definition
       in mind, the context surrounding the definition in [RFC2181]
       suggests it is intended to apply to the use of glue within the
-      document itself and not necessarily beyond. Glue records are
-      divided into two types for name servers: "in-domain" names and
-      "sibling domain" names.
+      document itself and not necessarily beyond.
+
+      The NS resource records for a zone can be one of three types:
+      "In-domain" (below the cut), "sibling" (below the cut of the
+      origin zone); or "neither" (none of the above).
 
       *  In-domain: a modifier to describe a name server whose name is
          either subordinate to or (rarely) the same as the owner name of
@@ -35,21 +37,23 @@
          in "example.com" zone may have "sibling" name server name
          "ns.another.example.com".
 
+      *  Neither: a name server whose name is not subordinate to or
+         the same as the zone origin. Glue records for these name
+         servers are useless. These name servers should not include
+         additional records.
+
    The following table shows examples of delegation types.
 
-   Delegation |Parent|Name Server Name  | Type
-   -----------+------+------------------+-----------------------------
-   com        | .    |a.gtld-servers.net| sibling domain
-   net        | .    |a.gtld-servers.net| in-domain
-   example.org| org  |ns.example.org    | in-domain
-   example.org| org  |ns.ietf.org       | sibling domain
-   example.org| org  |ns.example.com    | neither sibling or in-domain
-   example.jp | jp   |ns.example.jp     | in-domain
-   example.jp | jp   |ns.example.ne.jp  | sibling domain
-   example.jp | jp   |ns.example.com    | neither sibling or in-domain
-
-   name servers which are neither "sibling" or "in-domain" should
-   not include additional records.
+   Delegation |Parent|Name Server Name  | Type            | "Glue"
+   -----------+------+------------------+-----------------+-----------
+   com        | .    |a.gtld-servers.net| sibling domain  | should
+   net        | .    |a.gtld-servers.net| in-domain       | could
+   example.org| org  |ns.example.org    | in-domain       | could
+   example.org| org  |ns.ietf.org       | sibling domain  | could
+   example.org| org  |ns.example.com    | neither         | should not
+   example.jp | jp   |ns.example.jp     | in-domain       | should
+   example.jp | jp   |ns.example.ne.jp  | sibling domain  | could
+   example.jp | jp   |ns.example.com    | neither         | should not
 
    Bailiwick:  "In-bailiwick" and "Out-of-bailiwick" are modifiers used
       to describe the relationship between a zone and the name servers
