@@ -18,18 +18,14 @@
       suggests it is intended to apply to the use of glue within the
       document itself and not necessarily beyond.
 
-      The NS resource records for a zone can be one of three types:
-      "In-domain" (below the cut), "sibling" (below the cut of the
-      origin zone); or "neither" (none of the above).
-
-      *  In-domain: a modifier to describe a name server whose name is
+   In-domain Glue: a modifier to describe a name server whose name is
          either subordinate to or (rarely) the same as the owner name of
          the NS resource records.  An in-domain name server name needs
          to have glue records or name resolution fails.  For example, a
          delegation for "child.example.com" may have "in-domain" name
          server name "ns.child.example.com".
 
-      *  Sibling domain: a name server's name that is either subordinate
+   Sibling domain Glue: a name server's name that is either subordinate
          to or (rarely) the same as the zone origin and not subordinate
          to or the same as the owner name of the NS resource records.
          Glue records for sibling domains are allowed, but not
@@ -37,14 +33,9 @@
          in "example.com" zone may have "sibling" name server name
          "ns.another.example.com".
 
-      *  Neither: a name server whose name is not subordinate to or
-         the same as the zone origin. Glue records for these name
-         servers are useless. These name servers should not include
-         additional records.
-
    The following table shows examples of delegation types.
 
-   Delegation |Parent|Name Server Name  | Type            | "Glue"
+   Delegation |Parent|Name Server Name  | Type            | "Include Glue"
    -----------+------+------------------+-----------------+-----------
    com        | .    |a.gtld-servers.net| sibling domain  | should
    net        | .    |a.gtld-servers.net| in-domain       | could
