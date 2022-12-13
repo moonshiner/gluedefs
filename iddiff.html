@@ -68,22 +68,6 @@
       </tr>
       <tr>
         <td>&nbsp;</td>
-        <td class="left">      file that is not properly part of that zone, including nameserver
-</td>
-        <td>&nbsp;</td>
-        <td class="right">      file that is not properly part of that zone, including nameserver
-</td>
-      </tr>
-      <tr>
-        <td>&nbsp;</td>
-        <td class="left">      records of delegated sub-zones (NS records), address records that
-</td>
-        <td>&nbsp;</td>
-        <td class="right">      records of delegated sub-zones (NS records), address records that
-</td>
-      </tr>
-      <tr>
-        <td>&nbsp;</td>
         <td class="left">      accompany those NS records (A, AAAA, etc), and any other stray
 </td>
         <td>&nbsp;</td>
@@ -132,26 +116,26 @@
       </tr>
       <tr>
         <td>&nbsp;</td>
-        <td class="lblock">      document itself and not necessarily beyond.
+        <td class="left">      document itself and not necessarily beyond.
 </td>
         <td>&nbsp;</td>
-        <td class="rblock">      document itself and not necessarily beyond.<span class="insert"> Glue records are</span>
+        <td class="right">      document itself and not necessarily beyond.
 </td>
       </tr>
       <tr>
         <td>&nbsp;</td>
-        <td class="lblock"></td>
+        <td class="left">
+</td>
         <td>&nbsp;</td>
-        <td class="rblock"><span class="insert">      divided into two types for name servers: &quot;in-domain&quot; names and
-</span></td>
+        <td class="right">
+</td>
       </tr>
       <tr>
         <td>&nbsp;</td>
         <td class="lblock"><span class="delete">   Bailiwick:  &quot;In-bailiwick&quot; is a modifier to describe a name server
 </span></td>
         <td>&nbsp;</td>
-        <td class="rblock"><span class="insert">      &quot;sibling domain&quot; names.
-</span></td>
+        <td class="rblock"></td>
       </tr>
       <tr>
         <td>&nbsp;</td>
@@ -218,18 +202,10 @@
       </tr>
       <tr>
         <td>&nbsp;</td>
-        <td class="left">
+        <td class="lblock"> <span class="delete">     *</span>  In-domain: a modifier to describe a name server whose name is
 </td>
         <td>&nbsp;</td>
-        <td class="right">
-</td>
-      </tr>
-      <tr>
-        <td>&nbsp;</td>
-        <td class="left">      *  In-domain: a modifier to describe a name server whose name is
-</td>
-        <td>&nbsp;</td>
-        <td class="right">      *  In-domain: a modifier to describe a name server whose name is
+        <td class="rblock">   In-domain<span class="insert"> Glue</span>: a modifier to describe a name server whose name is
 </td>
       </tr>
       <tr>
@@ -282,10 +258,10 @@
       </tr>
       <tr>
         <td>&nbsp;</td>
-        <td class="left">      *  Sibling domain: a name server&#x27;s name that is either subordinate
+        <td class="lblock"> <span class="delete">     *</span>  Sibling domain: a name server&#x27;s name that is either subordinate
 </td>
         <td>&nbsp;</td>
-        <td class="right">      *  Sibling domain: a name server&#x27;s name that is either subordinate
+        <td class="rblock">   Sibling domain<span class="insert"> Glue</span>: a name server&#x27;s name that is either subordinate
 </td>
       </tr>
       <tr>
@@ -390,18 +366,18 @@
       </tr>
       <tr>
         <td>&nbsp;</td>
-        <td class="left">   Delegation |Parent|Name Server Name  | Type
-</td>
+        <td class="lblock"><span class="delete">   Delegation |Parent|Name Server Name  | Type
+</span></td>
         <td>&nbsp;</td>
-        <td class="right">   Delegation |Parent|Name Server Name  | Type
-</td>
+        <td class="rblock"><span class="insert">   Delegation |Parent|Name Server Name  | Type            | &quot;Include Glue&quot;
+</span></td>
       </tr>
       <tr>
         <td>&nbsp;</td>
-        <td class="left">   -----------+------+------------------+-----------------------------
+        <td class="lblock">   -----------+------+------------------+-----------------<span class="delete">-</span>-----------
 </td>
         <td>&nbsp;</td>
-        <td class="right">   -----------+------+------------------+-----------------------------
+        <td class="rblock">   -----------+------+------------------+-----------------<span class="insert">+</span>-----------
 </td>
       </tr>
       <tr>
@@ -409,7 +385,7 @@
         <td class="lblock">   com        | .    |a.gtld-servers.net|<span class="delete">in-bailiwick /</span> sibling domain
 </td>
         <td>&nbsp;</td>
-        <td class="rblock">   com        | .    |a.gtld-servers.net| sibling domain
+        <td class="rblock">   com        | .    |a.gtld-servers.net| sibling domain<span class="insert">  | should</span>
 </td>
       </tr>
       <tr>
@@ -417,7 +393,7 @@
         <td class="lblock">   net        | .    |a.gtld-servers.net|<span class="delete">in-bailiwick /</span> in-domain
 </td>
         <td>&nbsp;</td>
-        <td class="rblock">   net        | .    |a.gtld-servers.net| in-domain
+        <td class="rblock">   net        | .    |a.gtld-servers.net| in-domain<span class="insert">       | could</span>
 </td>
       </tr>
       <tr>
@@ -425,7 +401,7 @@
         <td class="lblock">   example.org| org  |ns.example.org    |<span class="delete">in-bailiwick /</span> in-domain
 </td>
         <td>&nbsp;</td>
-        <td class="rblock">   example.org| org  |ns.example.org    | in-domain
+        <td class="rblock">   example.org| org  |ns.example.org    | in-domain<span class="insert">       | could</span>
 </td>
       </tr>
       <tr>
@@ -433,7 +409,7 @@
         <td class="lblock">   example.org| org  |ns.ietf.org       |<span class="delete">in-bailiwick /</span> sibling domain
 </td>
         <td>&nbsp;</td>
-        <td class="rblock">   example.org| org  |ns.ietf.org       | sibling domain
+        <td class="rblock">   example.org| org  |ns.ietf.org       | sibling domain<span class="insert">  | could</span>
 </td>
       </tr>
       <tr>
@@ -441,7 +417,7 @@
         <td class="lblock"><span class="delete">   example.org| org  |ns.example.com    |out-of-bailiwick
 </span></td>
         <td>&nbsp;</td>
-        <td class="rblock"><span class="insert">   example.org| org  |ns.example.com    | neither sibling or in-domain
+        <td class="rblock"><span class="insert">   example.org| org  |ns.example.com    | neither         | should not
 </span></td>
       </tr>
       <tr>
@@ -449,7 +425,7 @@
         <td class="lblock">   example.jp | jp   |ns.example.jp     |<span class="delete">in-bailiwick /</span> in-domain
 </td>
         <td>&nbsp;</td>
-        <td class="rblock">   example.jp | jp   |ns.example.jp     | in-domain
+        <td class="rblock">   example.jp | jp   |ns.example.jp     | in-domain<span class="insert">       | should</span>
 </td>
       </tr>
       <tr>
@@ -457,7 +433,7 @@
         <td class="lblock">   example.jp | jp   |ns.example.ne.jp  |<span class="delete">in-bailiwick /</span> sibling domain
 </td>
         <td>&nbsp;</td>
-        <td class="rblock">   example.jp | jp   |ns.example.ne.jp  | sibling domain
+        <td class="rblock">   example.jp | jp   |ns.example.ne.jp  | sibling domain<span class="insert">  | could</span>
 </td>
       </tr>
       <tr>
@@ -465,7 +441,7 @@
         <td class="lblock"><span class="delete">   example.jp | jp   |ns.example.com    |out-of-bailiwick
 </span></td>
         <td>&nbsp;</td>
-        <td class="rblock"><span class="insert">   example.jp | jp   |ns.example.com    | neither sibling or in-domain
+        <td class="rblock"><span class="insert">   example.jp | jp   |ns.example.com    | neither         | should not
 </span></td>
       </tr>
       <tr>
@@ -475,20 +451,6 @@
         <td>&nbsp;</td>
         <td class="right">
 </td>
-      </tr>
-      <tr>
-        <td>&nbsp;</td>
-        <td class="lblock"></td>
-        <td>&nbsp;</td>
-        <td class="rblock"><span class="insert">   name servers which are neither &quot;sibling&quot; or &quot;in-domain&quot; should
-</span></td>
-      </tr>
-      <tr>
-        <td>&nbsp;</td>
-        <td class="lblock"></td>
-        <td>&nbsp;</td>
-        <td class="rblock"><span class="insert">   not include additional records.
-</span></td>
       </tr>
       <tr>
         <td>&nbsp;</td>
