@@ -37,9 +37,9 @@
 
    Delegation |Parent|Name Server Name  | Type            | "Include Glue"
    -----------+------+------------------+-----------------+-----------
-   com        | .    |a.gtld-servers.net| sibling domain  | should
-   net        | .    |a.gtld-servers.net| in-domain       | could
-   example.org| org  |ns.example.org    | in-domain       | could
+   com        | .    |a.gtld-servers.net| sibling domain  | could
+   net        | .    |a.gtld-servers.net| in-domain       | should
+   example.org| org  |ns.example.org    | in-domain       | should
    example.org| org  |ns.ietf.org       | sibling domain  | could
    example.org| org  |ns.example.com    | neither         | should not
    example.jp | jp   |ns.example.jp     | in-domain       | should
