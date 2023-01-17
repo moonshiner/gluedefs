@@ -18,18 +18,18 @@
       suggests it is intended to apply to the use of glue within the
       document itself and not necessarily beyond.
 
-   In-domain Glue: a modifier to describe a name server whose name is
-         either subordinate to or (rarely) the same as the owner name of
-         the NS resource records.  An in-domain name server name needs
-         to have glue records or name resolution fails.  For example, a
-         delegation for "child.example.com" may have "in-domain" name
-         server name "ns.child.example.com".
+   In-domain Glue: a modifier to describe glue records for a name server
+         whose name is either subordinate to or (rarely) the same as the
+         owner name of the NS resource records. An in-domain name server
+         name needs to have glue records or name resolution fails.
+         For example, a delegation for "child.example.com" may have
+         "in-domain" name server name "ns.child.example.com".
 
-   Sibling domain Glue: a name server's name that is either subordinate
+   Sibling domain Glue: glue records for a name server that is either subordinate
          to or (rarely) the same as the zone origin and not subordinate
          to or the same as the owner name of the NS resource records.
-         Glue records for sibling domains are allowed, but not
-         necessary.  For example, a delegation for "child.example.com"
+         Glue records for sibling domains are allowed in a referral response,
+         but not necessary.  For example, a delegation for "child.example.com"
          in "example.com" zone may have "sibling" name server name
          "ns.another.example.com".
 

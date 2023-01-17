@@ -135,42 +135,48 @@
         <td class="lblock"><span class="delete">   Bailiwick:  &quot;In-bailiwick&quot; is a modifier to describe a name server
 </span></td>
         <td>&nbsp;</td>
-        <td class="rblock"></td>
+        <td class="rblock"><span class="insert">   In-domain Glue: a modifier to describe glue records for a name server
+</span></td>
       </tr>
       <tr>
         <td>&nbsp;</td>
-        <td class="lblock"><span class="delete">      whose name is either a subdomain of or (rarely) the same as the
-</span></td>
+        <td class="lblock">      whose name is either <span class="delete">a </span>subd<span class="delete">oma</span>in<span class="delete"> </span>o<span class="delete">f</span> or (rarely) the same as the
+</td>
         <td>&nbsp;</td>
-        <td class="rblock"></td>
+        <td class="rblock"><span class="insert">   </span>      whose name is either sub<span class="insert">or</span>din<span class="insert">ate t</span>o or (rarely) the same as the
+</td>
       </tr>
       <tr>
         <td>&nbsp;</td>
         <td class="lblock"><span class="delete">      origin of the zone that contains the delegation to the name
 </span></td>
         <td>&nbsp;</td>
-        <td class="rblock"></td>
+        <td class="rblock"><span class="insert">         owner name of the NS resource records. An in-domain name server
+</span></td>
       </tr>
       <tr>
         <td>&nbsp;</td>
         <td class="lblock"><span class="delete">      server.  In-bailiwick name servers may have glue records in their
 </span></td>
         <td>&nbsp;</td>
-        <td class="rblock"></td>
+        <td class="rblock"><span class="insert">         name needs to have glue records or name resolution fails.
+</span></td>
       </tr>
       <tr>
         <td>&nbsp;</td>
         <td class="lblock"><span class="delete">      parent zone (using the first of the definitions of &quot;glue records&quot;
 </span></td>
         <td>&nbsp;</td>
-        <td class="rblock"></td>
+        <td class="rblock"><span class="insert">         For example, a delegation for &quot;child.example.com&quot; may have
+</span></td>
       </tr>
       <tr>
         <td>&nbsp;</td>
         <td class="lblock"><span class="delete">      in the definition above).  (The word &quot;bailiwick&quot; means the
 </span></td>
         <td>&nbsp;</td>
-        <td class="rblock"></td>
+        <td class="rblock"><span class="insert">         &quot;in-domain&quot; name server name &quot;ns.child.example.com&quot;.
+</span></td>
       </tr>
       <tr>
         <td>&nbsp;</td>
@@ -188,6 +194,14 @@
       </tr>
       <tr>
         <td>&nbsp;</td>
+        <td class="left">
+</td>
+        <td>&nbsp;</td>
+        <td class="right">
+</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
         <td class="lblock"><span class="delete">      &quot;In-bailiwick&quot; names are divided into two types of names for name
 </span></td>
         <td>&nbsp;</td>
@@ -202,66 +216,52 @@
       </tr>
       <tr>
         <td>&nbsp;</td>
-        <td class="lblock"> <span class="delete">     *</span>  In-domain: a modifier to describe a name server whose name is
-</td>
+        <td class="lblock"><span class="delete">      *  In-domain: a modifier to describe a name server whose name is
+</span></td>
         <td>&nbsp;</td>
-        <td class="rblock">   In-domain<span class="insert"> Glue</span>: a modifier to describe a name server whose name is
-</td>
+        <td class="rblock"></td>
       </tr>
       <tr>
         <td>&nbsp;</td>
-        <td class="left">         either subordinate to or (rarely) the same as the owner name of
-</td>
+        <td class="lblock"><span class="delete">         either subordinate to or (rarely) the same as the owner name of
+</span></td>
         <td>&nbsp;</td>
-        <td class="right">         either subordinate to or (rarely) the same as the owner name of
-</td>
+        <td class="rblock"></td>
       </tr>
       <tr>
         <td>&nbsp;</td>
-        <td class="left">         the NS resource records.  An in-domain name server name needs
-</td>
+        <td class="lblock"><span class="delete">         the NS resource records.  An in-domain name server name needs
+</span></td>
         <td>&nbsp;</td>
-        <td class="right">         the NS resource records.  An in-domain name server name needs
-</td>
+        <td class="rblock"></td>
       </tr>
       <tr>
         <td>&nbsp;</td>
-        <td class="left">         to have glue records or name resolution fails.  For example, a
-</td>
+        <td class="lblock"><span class="delete">         to have glue records or name resolution fails.  For example, a
+</span></td>
         <td>&nbsp;</td>
-        <td class="right">         to have glue records or name resolution fails.  For example, a
-</td>
+        <td class="rblock"></td>
       </tr>
       <tr>
         <td>&nbsp;</td>
-        <td class="left">         delegation for &quot;child.example.com&quot; may have &quot;in-domain&quot; name
-</td>
+        <td class="lblock"><span class="delete">         delegation for &quot;child.example.com&quot; may have &quot;in-domain&quot; name
+</span></td>
         <td>&nbsp;</td>
-        <td class="right">         delegation for &quot;child.example.com&quot; may have &quot;in-domain&quot; name
-</td>
+        <td class="rblock"></td>
       </tr>
       <tr>
         <td>&nbsp;</td>
-        <td class="left">         server name &quot;ns.child.example.com&quot;.
-</td>
+        <td class="lblock"><span class="delete">         server name &quot;ns.child.example.com&quot;.
+</span></td>
         <td>&nbsp;</td>
-        <td class="right">         server name &quot;ns.child.example.com&quot;.
-</td>
+        <td class="rblock"></td>
       </tr>
       <tr>
         <td>&nbsp;</td>
-        <td class="left">
+        <td class="lblock"> <span class="delete">     *</span>  Sibling domain: a name server<span class="delete">&#x27;s name</span> that is either subordinate
 </td>
         <td>&nbsp;</td>
-        <td class="right">
-</td>
-      </tr>
-      <tr>
-        <td>&nbsp;</td>
-        <td class="lblock"> <span class="delete">     *</span>  Sibling domain: a name server&#x27;s name that is either subordinate
-</td>
-        <td>&nbsp;</td>
-        <td class="rblock">   Sibling domain<span class="insert"> Glue</span>: a name server&#x27;s name that is either subordinate
+        <td class="rblock">   Sibling domain<span class="insert"> Glue</span>: <span class="insert">glue records for </span>a name server that is either subordinate
 </td>
       </tr>
       <tr>
@@ -282,18 +282,18 @@
       </tr>
       <tr>
         <td>&nbsp;</td>
-        <td class="left">         Glue records for sibling domains are allowed, but not
+        <td class="lblock">         Glue records for sibling domains are allowed,<span class="delete"> but not</span>
 </td>
         <td>&nbsp;</td>
-        <td class="right">         Glue records for sibling domains are allowed, but not
+        <td class="rblock">         Glue records for sibling domains are allowed<span class="insert"> in a referral response</span>,
 </td>
       </tr>
       <tr>
         <td>&nbsp;</td>
-        <td class="left">         necessary.  For example, a delegation for &quot;child.example.com&quot;
+        <td class="lblock">         necessary.  For example, a delegation for &quot;child.example.com&quot;
 </td>
         <td>&nbsp;</td>
-        <td class="right">         necessary.  For example, a delegation for &quot;child.example.com&quot;
+        <td class="rblock">        <span class="insert"> but not</span> necessary.  For example, a delegation for &quot;child.example.com&quot;
 </td>
       </tr>
       <tr>
