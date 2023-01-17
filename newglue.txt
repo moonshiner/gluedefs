@@ -25,17 +25,17 @@
          For example, a delegation for "child.example.com" may have
          "in-domain" name server name "ns.child.example.com".
 
-   Sibling domain Glue: glue records for a name server that is either subordinate
-         to or (rarely) the same as the zone origin and not subordinate
-         to or the same as the owner name of the NS resource records.
-         Glue records for sibling domains are allowed in a referral response,
-         but not necessary.  For example, a delegation for "child.example.com"
-         in "example.com" zone may have "sibling" name server name
-         "ns.another.example.com".
+   Sibling domain Glue: a modifier to describe glue records for a name server
+         that is either subordinate to or (rarely) the same as the zone origin
+         and not subordinate to or the same as the owner name of the NS resource
+         records. Glue records for sibling domains are allowed in a referral
+         response, but not necessary.  For example, a delegation for
+         "child.example.com" in "example.com" zone may have "sibling" name
+         server name "ns.another.example.com".
 
    The following table shows examples of delegation types.
 
-   Delegation |Parent|Name Server Name  | Type            | "Include Glue"
+   Delegation |Parent|Name Server Name  | Type            | Include glue
    -----------+------+------------------+-----------------+-----------
    com        | .    |a.gtld-servers.net| sibling domain  | could
    net        | .    |a.gtld-servers.net| in-domain       | should
